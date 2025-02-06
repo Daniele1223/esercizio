@@ -4,6 +4,5 @@ FROM alpine:latest
 
 COPY . /app
 
-RUN apk  update  && upgrade  && apk bash
-
+RUN apk add 
 CMD ["echo", "hello world"]

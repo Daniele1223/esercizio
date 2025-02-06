@@ -4,7 +4,6 @@ FROM alpine:latest
 
 COPY . /app
 
-RUN apt get-update
+RUN apk  update  && upgrade  && apk bash
 
-
-CMD ["echo", "helloorld"]
+CMD ["echo", "hello world"]
